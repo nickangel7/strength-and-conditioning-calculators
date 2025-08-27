@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
 </h1>Strength and Conditioning Calculators</h1>
+    </header>
 <p>Use the following calculators to maximize your Health and Fitness goals</p>
 <div>
 <h2>One Rep Max Calculator</h2>
-<p>Calculate your estimated one rep max for any exercise</p>
+<p>Calculate your estimated one rep max for any exercise:</p>
 <form>
     <label for="liftName"> Exercise Name</label><br>
     <input type ="text" id ="liftName" name ="liftName"><br>
@@ -24,7 +26,7 @@
 </div>
 <div>
 <h2>VO2 Max Calculator</h2>
-<p>Calculate your VO2 Max in Running, Swimming, or Cycling</p>
+<p>Calculate your VO2 Max in Running, Swimming, or Cycling:</p>
 <select name="modality" id="modality">
     <option value="running">Running</option>
     <option value="swimming">Swimming</option>
@@ -47,10 +49,33 @@
     <option value="Male">Male</option>
     <option value="Female">Female</option>
 </select>
-</div>
-<div>
-<h2>BMI Calculator</h2>
-<p>Calculate your BMI based on your height and weight</p>
+<form>
+    <label>Test Results</label>
+    <label for="testPush">Pushups</label><br>
+    <input type="number" id="testPush" name="testPush"><br>
+    <label for="testPlank">Plank</label><br>
+    <label for="plankMin">Min:</label>
+    <input type="number" id="plankMin" name="plankMin">
+    <label for="plankSec">Sec:</label>
+    <input type="number" id="plankSec" name="plankSec"><br>
+</form>
+<label for="cardio">Cardio</label>
+<select name="cardio" id="cardio">
+    <option value ="Run">Run</option>
+    <option value ="Swim">Swim</option>
+    <option value ="Treadmill">Treadmill</option>
+    <option value ="Row">Row</option>
+    <option value ="Stationary Bike">Stationary Bike</option>
+</select><br>
+<label for="cardioMin">Min:</label>
+    <input type="number" id="cardioMin" name="cardioMin">
+    <label for="cardioSec">Sec:</label>
+    <input type="number" id="cardioSec" name="cardioSec"><br>
+<input type="button" id="submitTest">
+<footer>
+    <p>2025 Homefitnessdojo.com. All rights reserved</p>
+    <p>Contact: homefitnessdojo@gmail.com</p>
+</footer>
 </div>
 </body>
 </html>
